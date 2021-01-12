@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import './App.css';
 import ChildComponent from "./ChildComponet"
 
-const ThemeContext = React.createContext()
+export const ThemeContext = React.createContext()
 
-function App() {
+export default function App() {
 
   const [theme, setTheme] = useState('dark')
 
@@ -24,7 +24,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
-
-export { ThemeContext };
